@@ -2,30 +2,35 @@
 # 2016-17 Contest Short answers
 1. Boolean Algebra
 Simplify the following Boolean expression:
+
 $\bar{A}(B+ \bar{A}) + A\bar{B}+ B(A+ \bar{A}B)$
 
 Solution
-$$
-\bar{A}(B+ \bar{A}) + A\bar{B}+ B(A+ \bar{A}B)  \\
-= \bar{A}B + \bar{A} \bar{A} +  A\bar{B} + AB + \bar{A}BB \\
-= \bar{A}B + \bar{A}  +  A\bar{B} + AB + \bar{A}B \\
-= \bar{A}B + \bar{A}  +  A\bar{B} + AB \\
-= \bar{A} (B+1) + A (\bar{B} + B) \\
-= \bar{A} + A \\
-= 1 
-$$
+```math
+\begin{aligned}
+\bar{A}(B+ \bar{A}) + A\bar{B}+ B(A+ \bar{A}B)  & \\
+ & = \bar{A}B + \bar{A} \bar{A} +  A\bar{B} + AB + \bar{A}BB \\
+&= \bar{A}B + \bar{A}  +  A\bar{B} + AB + \bar{A}B \\
+&= \bar{A}B + \bar{A}  +  A\bar{B} + AB \\
+&= \bar{A} (B+1) + A (\bar{B} + B) \\
+&= \bar{A} + A \\
+&= 1
+\end{aligned}
+```
 
 2. How many ordered triples make the following Boolean expression TRUE?
-
-$\overline{ A \overline{(B + \overline{C})} }$
+The overline does not work in markdown
+$\overline{ A \overline{(B + \bar{C})} }$
 
 Solution
-$$
-\overline{ A \overline{(B + \overline{C})} } \\
-= \bar{A} +  \overline{ \overline{(B + \overline{C})} } \\
-= \bar{A} + (B + \overline{C}) \\
-= \bar{A} + B + \overline{C}
-$$
+```math
+\begin{aligned}
+\overline{ A \overline{(B + \bar{C})} } \\
+= \bar{A} +  \overline{ \overline{(B + \bar{C})} } \\
+= \bar{A} + (B + \bar{C}) \\
+= \bar{A} + B + \bar{C}
+\end{aligned}
+```
 
 $$
 \begin{bmatrix}
@@ -46,7 +51,9 @@ $$
 GREATEXPECTATIONS
 
 Solution
+
 G R E A T E X P E C T A T I O N S
+
 G R E A T E2 X P E3 C T2 A T3 I O N S
 
 ```mermaid
@@ -81,6 +88,7 @@ POP(X), PUSH(S), PUSH(H), PUSH(A), POP(X), PUSH(M),
 POP(X), POP(X)
 
 Solution:
+```
 empty queue
 PUSH(M)   queue(M)
 PUSH(I)   queue(M, I)
@@ -103,4 +111,5 @@ POP(X)    stack(H,A,V,S,H)
 PUSH(M)   stack(H,A,V,S,H,M)
 POP(X)    stack(H,A,V,S,H)
 POP(X)    stack(H,A,V,S)
-the next POPPED element will be S
+So the next POPPED element will be S
+```
